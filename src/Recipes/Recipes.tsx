@@ -21,8 +21,6 @@ const Recipes: FC = () => {
   };
 
   const onRecipeSelect = (e: ChangeEvent<HTMLSelectElement>) => {
-    console.log(e.target.value);
-
     if (e.target.value) {
       getRecipeInfo(e.target.value);
     }
